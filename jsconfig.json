@@ -1,0 +1,6 @@
+// For VSCode
+{
+    "compilerOptions": {
+        "target": "ES6"
+    }
+}

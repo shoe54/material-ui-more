@@ -1,1 +1,25 @@
 # material-ui-more
+
+High-level components built from material-ui components. Currently has a Proper Name popup component. Address popup component to come. This is very much work in progress.
+
+What's next on my list: npmignore file so that src doesn't get included in the published npm module.
+
+## Pre-requisites
+
+Node
+Npm
+
+## Building
+
+    npm install
+    npm build
+    npm demobuild
+
+To publish npm module, use `npm publish`
+
+## Running for development purposes
+
+    npm demodevbuild
+    npm demorun
+
+You will need to execute the above commands in separate console windows as each command will stay running and watch for file changes

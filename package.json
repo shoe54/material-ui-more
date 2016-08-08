@@ -1,0 +1,35 @@
+{
+  "name": "material-ui-more",
+  "version": "0.0.3",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src --presets babel-preset-es2015,stage-1,react --out-dir dist",
+    "demodevbuild": "webpack -d --watch",
+    "demobuild": "webpack -p",
+    "demorun": "live-server --ignorePattern=.*\\.jsx --open=demo.html",
+    "prepublish": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-react": "^6.11.1",
+    "babel-preset-stage-1": "^6.5.0",
+    "live-server": "^1.0.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "material-ui": "^0.15.2",
+    "keycode": "^2.1.4",
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-event-listener": "^0.2.1",
+    "react-tap-event-plugin": "^1.0.0"
+  },
+  "peerDependencies": {}
+}
