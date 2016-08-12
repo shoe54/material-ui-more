@@ -1,12 +1,12 @@
 {
   "name": "material-ui-more",
-  "version": "0.0.8",
-  "description": "High-level React components built from material-ui components.",
+  "version": "0.0.9",
+  "description": "High-level React components built from material-ui components. See component demo at https://shoe54.github.io/material-ui-more/",
   "keywords": ["react","material-ui","components","name","address"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel src --presets babel-preset-es2015,stage-1,react --out-dir dist",
+    "build": "babel src --presets babel-preset-es2015,stage-1,react --out-dir dist --ignore demo.jsx",
     "demodevbuild": "webpack -d --watch",
     "demobuild": "webpack -p",
     "demorun": "live-server --ignorePattern=.*\\.jsx --open=index.html",
