@@ -1,18 +1,22 @@
 {
   "name": "material-ui-more",
-  "version": "0.0.3",
-  "description": "",
+  "version": "0.0.8",
+  "description": "High-level React components built from material-ui components.",
+  "keywords": ["react","material-ui","components","name","address"],
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel src --presets babel-preset-es2015,stage-1,react --out-dir dist",
     "demodevbuild": "webpack -d --watch",
     "demobuild": "webpack -p",
-    "demorun": "live-server --ignorePattern=.*\\.jsx --open=demo.html",
+    "demorun": "live-server --ignorePattern=.*\\.jsx --open=index.html",
     "prepublish": "npm run build"
   },
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git", "url": "https://github.com/shoe54/material-ui-more.git"
+  },
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.11.4",
@@ -21,15 +25,17 @@
     "babel-preset-react": "^6.11.1",
     "babel-preset-stage-1": "^6.5.0",
     "live-server": "^1.0.0",
-    "webpack": "^1.13.1"
-  },
-  "dependencies": {
-    "material-ui": "^0.15.2",
-    "keycode": "^2.1.4",
-    "react": "^15.3.0",
-    "react-dom": "^15.3.0",
-    "react-event-listener": "^0.2.1",
+    "webpack": "^1.13.1",
+    "material-ui": "^0.15.2",    
+    "react": "^15.0.0",
+    "react-dom": "^15.0.0",
     "react-tap-event-plugin": "^1.0.0"
   },
-  "peerDependencies": {}
+  "peerDependencies": {
+    "material-ui": "^0.15.2"
+  },
+  "dependencies": {
+    "keycode": "^2.1.4",
+    "react-event-listener": "^0.2.1"
+  }
 }

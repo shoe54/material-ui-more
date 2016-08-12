@@ -1,2 +1,6 @@
-/dist
 /node_modules
+
+#Exclude dist folder except demo.js
+!dist/
+dist/*
+!dist/demo.js

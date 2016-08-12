@@ -12,14 +12,14 @@ What's next on my list: npmignore file so that src doesn't get included in the p
 ## Building
 
     npm install
-    npm build
-    npm demobuild
+    npm run build
+    npm run demobuild
 
-To publish npm module, use `npm publish`
+To publish npm module, use `npm publish` after building.
 
 ## Running for development purposes
 
-    npm demodevbuild
-    npm demorun
+    npm run demodevbuild
+    npm run demorun
 
 You will need to execute the above commands in separate console windows as each command will stay running and watch for file changes

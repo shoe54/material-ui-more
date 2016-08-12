@@ -60,7 +60,7 @@ var TextFieldWithDialog = DialogContent => class extends DialogContent {
   openDialog() {
     this.setState({
       dialogData: this.state.data,
-    }, this.refs.dialogWindow.show);
+    }, this._dialogWindow.show);
   }
 
   /**
@@ -126,7 +126,7 @@ var TextFieldWithDialog = DialogContent => class extends DialogContent {
       style,
       textFieldStyle,
       wordings,
-      //...other
+      ...other
     } = this.props;
 
     const {prepareStyles} = this.context.muiTheme;
@@ -134,7 +134,7 @@ var TextFieldWithDialog = DialogContent => class extends DialogContent {
     return (
       <div className={className} style={prepareStyles(Object.assign({}, style))}>
         <TextField
-          /*{...other}*/
+          {...other}
           hintText={hintText}
           onFocus={this.handleFocus}
           onTouchTap={this.handleTouchTap}
@@ -156,7 +156,7 @@ var TextFieldWithDialog = DialogContent => class extends DialogContent {
           onAccept={this.handleAccept}
           onShow={this.onShow}
           onDismiss={this.onDismiss}
-          ref="dialogWindow"
+          ref={(c) => this._dialogWindow = c}
           //shouldDisableDate={shouldDisableDate}
           wordings={wordings}
         >
@@ -261,7 +261,7 @@ class TextFieldDialog extends Component {
       style, // eslint-disable-line no-unused-vars
       wordings,
       animation,
-      //...other,
+      ...other,
     } = this.props;
 
     const {open} = this.state;
@@ -280,7 +280,7 @@ class TextFieldDialog extends Component {
     const Container = (container === 'inline' ? Popover : Dialog);
 
     return (
-      <div /*{...other}*/ ref="root">
+      <div {...other} ref="root">
         <Container
           anchorEl={this.refs.root} // For Popover
           animation={animation || PopoverAnimationVertical} // For Popover

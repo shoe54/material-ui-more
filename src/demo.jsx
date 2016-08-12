@@ -4,7 +4,7 @@ import injectTapEventPlugin from 'react-tap-event-plugin';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import TextField from 'material-ui/TextField';
 //import { TextFieldWithDialog } from './';
-import { ProperNameField } from '../';
+import { ProperNameField } from './';
 
 // For Material-UI. See https://github.com/callemall/material-ui
 injectTapEventPlugin();
